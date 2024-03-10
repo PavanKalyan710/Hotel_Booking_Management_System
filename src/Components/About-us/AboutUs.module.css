@@ -1,0 +1,121 @@
+/* CSS for About Us page */
+
+.aboutUs {
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20200618/pngtree-blue-sky-with-cloud-background-image_339552.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 0%;
+}
+
+.aboutUs h1 {
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.aboutUs h2 {
+  font-size: 20px;
+  text-align: center;
+  padding: 0 20%;
+}
+
+.aboutUs h3 {
+  font-size: 20px;
+  text-align: center;
+  padding: 0 20%;
+}
+
+.aboutUs h4 {
+  font-size: 13px;
+  text-align: center;
+  padding: 0 20%;
+}
+
+.second_section {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second_section h1 {
+  margin-bottom: 20px;
+}
+
+.imageContainer {
+  display: flex;
+  gap: 30px;
+}
+
+.teamMember {
+  position: relative;
+  text-align: center;
+}
+
+.teamMemberImage {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+}
+
+.teamMember:hover .teamMemberImage {
+  transform: scale(1.2); /* Scale up to 120% of original size on hover */
+}
+
+.teamMember h3, 
+.teamMember h4 {
+  margin: 10px 0; /* Added margin to create gap between image and text */
+}
+
+.additionalText {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 10px);
+  transform: translateY(-50%);
+  padding: 15px;
+  background: #4ae1f2 url('https://www.transparenttextures.com/patterns/papel-creased.png'); /* Background pattern */
+  color: #000000;
+  border-radius: 20px; /* Curved border */
+  border: 2px solid #000000; /* Border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  animation: pulsate 1.5s ease infinite; /* Pulsating animation */
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.teamMember:hover .additionalText {
+  display: block;
+}
+
+.third_section {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text */
+}
+
+.third_section h1 {
+  margin-bottom: 20px;
+}
